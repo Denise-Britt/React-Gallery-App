@@ -19,8 +19,6 @@ import SearchForm from './Components/SearchForm';
 /////////
 
 
-//const queryString = require('query-string');
-//let path = `${match.url}/relative-path`;
 
 const resultsPerPage = 24;
 

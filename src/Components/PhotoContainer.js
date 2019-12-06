@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Photos from './Photos';
 import NotFound from './NotFound';
-
-//Stateful class component
 
 const PhotoContainer = props => {
 
