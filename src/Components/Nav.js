@@ -10,7 +10,7 @@ const Nav = (props) => (
     <Router>
     < NavLink to="/">Home</NavLink>
       <ul>
-        <li><NavLink to='https://www.flickr.com/search/?text=cats'/>Cats</li>
+        <li><NavLink to="/search/dinosaurs" onClick={() => props.onSearch('dinosaurs')}>Dinosaurs</NavLink></li>
         <li><NavLink to='{match}/'/>Dogs</li>
         <li><NavLink to='#'/>Computers</li>
       </ul>   
