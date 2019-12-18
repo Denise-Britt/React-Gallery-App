@@ -5,19 +5,21 @@ import {
 } from 'react-router-dom';
 
 
-const Nav = (props) => (
-  <nav className="main-nav">
-    <Router>
-    < NavLink to="/">Home</NavLink>
-      <ul>
-        <li><NavLink to="/search/dinosaurs" onClick={() => props.onSearch('dinosaurs')}>Dinosaurs</NavLink></li>
-        <li><NavLink to='{match}/'/>Dogs</li>
-        <li><NavLink to='#'/>Computers</li>
-      </ul>   
-    </Router>
+const Nav = (props) => {
+  return(
 
-  </nav>
-);
+    <nav className="main-nav">
+      <Router>
 
+        <ul>
+          <li><NavLink to={"/search/otters"} onClick={() => props.performSearch("otters")}>Otters</NavLink></li>
+          <li><NavLink to={"/search/naruto"} onClick={() => props.performSearch("naruto")}>Naruto</NavLink></li>
+          <li><NavLink to={"/search/miniature+pigs"} onClick={() => props.performSearch("miniature pigs")}>Mini Pigs</NavLink></li>
+        </ul>   
+      </Router>
+
+    </nav>
+  );
+}
 
 export default Nav;
